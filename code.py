@@ -119,13 +119,13 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                             break
 
                         match gun_option:
-                            case 1:
+                            case 0:
                                 start_key = "sharedguns"
                                 start_key2 = "replacement sounds"
-                            case 2:
+                            case 1:
                                 start_key = "terroristguns"
                                 start_key2 = "replacement sounds"
-                            case 3:
+                            case 2:
                                 start_key = "counterterroristguns"
                                 start_key2 = "replacement sounds"
 

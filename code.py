@@ -58,14 +58,11 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
     while True:
         options = get_valid_input(f"Asset replacements:\n"
                         f"0:  {Fore.GREEN}Custom{Style.RESET_ALL}\n"
-                        f"1:  {Fore.GREEN}Custom Skyboxes{Style.RESET_ALL}\n"
-                        f"2:  {Fore.GREEN}Hitmarker Tweaks{Style.RESET_ALL}\n"
-                        f"3:  {Fore.GREEN}Gun Sounds{Style.RESET_ALL}\n"
-                        f"4:  {Fore.GREEN}CLIENT avatar tweaks{Style.RESET_ALL}\n"
-                        f"5:  {Fore.GREEN}eating sound{Style.RESET_ALL}\n"
-                        f"{Fore.CYAN}</> : if you paid for this you got scammed, this is a free open source tool. If you find anyone selling it please contact @.o0x / @8ar on discord!{Style.RESET_ALL}\n"
+                        f"1:  {Fore.GREEN}Custom skyboxes{Style.RESET_ALL}\n"
+                        f"2:  {Fore.GREEN}Custom hitsounds{Style.RESET_ALL}\n"
+                        f"3:  {Fore.GREEN}Custom gun sounds{Style.RESET_ALL}\n"
                         f"Type 'back' to return to the previous menu.\n: ",
-                        valid_values=[0, 1, 2, 3, 4, 5 ]
+                        valid_values=[0, 1, 2, 3]
         )
         if options == 'back':
             print(f"{Fore.CYAN}\nReturning to main menu.{Style.RESET_ALL}")
@@ -75,6 +72,7 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
         try:
             match options:
                 case 0:
+                    # custom is always the same ignore this
                     return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
                 case 1:
                     while True:
@@ -87,75 +85,52 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                         )
 
                         if sky_option == 'back':
-                            print(f"\n{Fore.CYAN}\nReturning to Asset replacements.{Style.RESET_ALL}")
+                            print(f"\n{Fore.CYAN}Returning to Asset replacements.{Style.RESET_ALL}")
                             break
 
                         match sky_option:
                             case 1:
                                 start_key = "skyboxes"
-                                addon2 = "75205be5a167842c7ed931d9d5a904ca"
+                                start_key2 = "remove"
                                 return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
                             case 2:
                                 bootstrapper()
                                 start_key = "skyboxes"
-                                addon2 = "75205be5a167842c7ed931d9d5a904ca"
+                                start_key2 = "remove"
                                 return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
+                
                 case 2:
-                    while True:
-                        sky_option = get_valid_input(
-                            f"\nSound or Hitmarker\n"
-                            f"1: {Fore.GREEN}Sound{Style.RESET_ALL}\n"
-                            f"2: {Fore.GREEN}Hitmarker{Style.RESET_ALL}\n"
-                            f"Type 'back' to return to the previous menu.\n: ",
-                            valid_values=[1, 2]
-                        )
-
-                        if sky_option == 'back':
-                            print(f"\n{Fore.CYAN}\nReturning to Asset replacements.{Style.RESET_ALL}")
-                            break
-
-                        match sky_option:
-                            case 1:
-                                start_key = "dahood hit sound"
-                                start_key2 = "replacement sounds"
-                                return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
-                            case 2:
-                                start_key = "shield icon"
-                                start_key2 = "hitmarker"
-                                return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
-                case 3:
-                    start_key = "guns"
+                    start_key = "hitsounds"
                     start_key2 = "replacement sounds"
                     return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
-                case 4:
+                
+                case 3:
                     while True:
-                        sky_option = get_valid_input(
-                            f"\nPick which item you want to change\n"
-                            f"1: {Fore.GREEN}Stevie Standard > Headless{Style.RESET_ALL}\n"
-                            f"2: {Fore.GREEN}International Netherlands Fedora > SKOTN{Style.RESET_ALL}\n"
-                            f"Type 'back' to return to the previous menu.\n: ",
-                            valid_values=[1, 2]
+                        gun_option = get_valid_input(
+                            f"1: {Fore.GREEN}Shared Guns{Style.RESET_ALL}\n"
+                            f"2: {Fore.GREEN}Terrorist Guns{Style.RESET_ALL}\n"
+                            f"3: {Fore.GREEN}Counter-Terrorist Guns{Style.RESET_ALL}\n"
+                            f"Type 'back' to return to Asset replacements menu.\n: ",
+                            valid_values=[1, 2, 3]
                         )
 
-                        if sky_option == 'back':
-                            print(f"\n{Fore.CYAN}\nReturning to Asset replacements.{Style.RESET_ALL}")
+                        if gun_option == 'back':
+                            print(f"{Fore.CYAN}\nReturning to Asset replacements menu.{Style.RESET_ALL}")
                             break
 
-                        match sky_option:
+                        match gun_option:
                             case 1:
-                                addon = ["0111487c7d3044bec56587c86740c9ce", "aa50829c76ec2756b28883af05342ca6"]
-                                addon2 = "912c8cc21a2bfff5a882e91a8695da9a"
-                                return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
+                                start_key = "sharedguns"
+                                start_key2 = "replacement sounds"
                             case 2:
-                                addon = "7ce2ac6c1ed6d340767e00fe02f529f6"
-                                addon2 = "b96f172467aa810b20bc5a99eba858e5"
-                                push(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names)
-                                addon = ["59cccb6d405a32f9a1d48ac20ec23fd2", "06ad51e8624af959dc7b5994b8453f29"]
-                                addon2 = "9d5876394f908ec23b2d54dfb424059b"
-                                return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
-                case 5:
-                    start_key = "eating sound"
-                    start_key2 = "replacement sounds"
-                    return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names                    
+                                start_key = "terroristguns"
+                                start_key2 = "replacement sounds"
+                            case 3:
+                                start_key = "counterterroristguns"
+                                start_key2 = "replacement sounds"
+
+                        start_key2 = "replacement sounds"
+                        return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
+                
         except Exception as e:
             print(f"{Fore.RED}An error occurred: {e}{Style.RESET_ALL}")

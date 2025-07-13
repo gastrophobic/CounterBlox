@@ -1,75 +1,89 @@
 {
-  "counterterroristguns": {
-    "px4": "2cb933aa89cfe8973719a476c99ec124",
-    "five seven": "d6789d359e64d3beac89353f38b8565e",
-    "famas f1": "e135d2a79631fbab17156432a81f1bf0",
-    "m4a4": "f1f8447ec733c25b17f23c1a101baf33",
-    "aug a3": "600c4ba4a8c2c0949ab6684052019610",
-    "g3sg1": "7f34f48418eb18070e7ea592ecddba13",
-    "mp9": "7125b775c19d56e6237646703e8a0932",
-    "usps": "98b8c4fa2f66070d98cac255dcaaeb3c",
-    "usp": "4f91f7919b93073352429398f9d9e69a",
-    "m4a1-s": {
-      "suppressed": "7e962643e48018d7118ec174137e0ddd",
-      "non suppressed": "b02ee36ada3c66621ebe32cf41335d0b"
-  },
-  "terroristguns": {
-    "glock 18": "066c14c0e4e6793cce97b71187f36ac7",
-    "tec 9": "f52c77757e9c9b68ac3c415a47a80cb2",
-    "ak47": "57823b4fb0c398db0a74ad98031ad30f",
-    "galil sar": "f1f4ed4848408a6486b9e2305f0f1fc9",
-    "sg 553": "29da38ea257ed79f3db43caf57dd1d84",
-    "sawed off": "1d870c81a3d22fad62182bacc679249f",
-    "mac 10": "231a64bed007fbc235dc4768a6a64440"
-  },
-  "sharedguns": {
-    "dual berettas": "8f8fe0ae8eb12e252f4e6ccbd53d8c1f",
-    "p250": "5a6cef525465e60390f60ed8bfc7b1db",
-    "deagle": "c0d7dd673c5306f852da3864d15adfe3",
-    "44 magnum": "beccaf6c44ca3a9ba1ce2c79e5037c60",
-    "nova": "75b03baee0704648ff8295742e97a929",
-    "xm1014": "df64d000fbf491bd480b9a663632a3e5",
-    "mag 7": "9fd9256874de2dd11a3823653fc65aa3",
-    "mp5": "69de9369e0efa22340ee8e9e1206bd60",
-    "ump45": "649a10d8c87cde2e1ad2c1e94b510cea",
-    "p90": "8008e1d237e276b6167cc7b5d3054531",
-    "thompson": "169d82e43b5604be9caa78099908eeb9f",
-    "scout": "3dd820b9de4d76c56bc011bd81a99a9f",
-    "awp": "4d54edb8a61a7f84d39f70380c061d40",
-    "m249": "bb4f27ef7a963141df3575008cd540ab",
-    "mg42": "06268ec5d7d81b61b0bf8e40c035ad39"
-    },
-    "hitsounds": [
-      "1524f7611b0566de10f1322486be70e5",
-      "1ca473a4b7c104e9bc95909da8bfb2d3"
-    ],
-    "skyboxes": [
-      "3ef9b32ee5bec47bad6ccbefa6a0ab9c",
-      "e1cc3de486a0827364e6e8b55d43f7f3",
-      "25a2f0e8e683819aa8575e2e9ec69162",
-      "8bf6118237eb672393b9dc919a5f0001",
-      "9e4c47e82a1e7bc50fe5ee586bc270a0",
-      "c58141701e3272e2a159104dd8e988b0",
-      "05a809bd5e6b365ad39789310dc504b8",
-      "261f35488970f97e72609623bd7c618a",
-      "5c33542bf9ef5440c3e39c8065a86503",
-      "d7ee2b5d8fc7f6300ba5a9257b2c681e",
-      "e8fafae29840fe96f9e58ac4cb6f6c37",
-      "fc5ceb1b70fdf5595bbc49a23edb4a6e",
-      "1e008ccb310bb48895118a8592b21b85",
-      "399706ad5e9583d083b65e761f4d6e45",
-      "76a7df3020b27c31c537da7d51111591",
-      "8db589d49f38e32b3e5175198823910e",
-      "9d4dd49404634932edbd1f0574877f3f",
-      "d801b3a523073ee1e402632fb72a4c01",
-      "0bf00210f45c284d7dd77bb25fea9b26",
-      "30491c52a91bb4e8f6df49d3cf5a6109",
-      "5fac319e9f663d7eced29ec39abd0b51",
-      "6c708b46a7eed9cd7cba40f64196b56a",
-      "970d515bbb32959bea9a433a4d79ac3f",
-      "a43f50bac6ec861632279ca968b14f59"
-    ]   
+    "Counterblox": {
+        "CB Gun Sounds": {
+            "T Side": {
+                "Glock-18": "066c14c0e4e6793cce97b71187f36ac7",
+                "Tec-9": "f52c77757e9c9b68ac3c415a47a80cb2",
+                "AK47": "57823b4fb0c398db0a74ad98031ad30f",
+                "Galil SAR": "f1f4ed4848408a6486b9e2305f0f1fc9",
+                "SG 553": "29da38ea257ed79f3db43caf57dd1d84",
+                "MAC-10": "231a64bed007fbc235dc4768a6a64440",
+                "Sawed Off": "1d870c81a3d22fad62182bacc679249f"
+            },
+            "CT Side": {
+                "Five-seveN": "d6789d359e64d3beac89353f38b8565e",
+                "PX4": "2cb933aa89cfe8973719a476c99ec124",
+                "USP-S": {
+                    "supressed": "98b8c4fa2f66070d98cac255dcaaeb3c",
+                    "non supressed": "4f91f7919b93073352429398f9d9e69a"
+                },
+                "AUG": "600c4ba4a8c2c0949ab6684052019610",
+                "FAMAS F1": "e135d2a79631fbab17156432a81f1bf0",
+                "M4A1-S": {
+                    "supressed": "7e962643e48018d7118ec174137e0ddd",
+                    "non supressed": "b02ee36ada3c66621ebe32cf41335d0b"
+                },
+                "M4A4": "f1f8447ec733c25b17f23c1a101baf33",
+                "MP9": "7125b775c19d56e6237646703e8a0932",
+                "Mag-7": "9fd9256874de2dd11a3823653fc65aa3"
+            },
+            "Shared": {
+                "CZ75-Auto": "2efee7ff2f3eaff8fd2151807ab9fa83",
+                "Deagle": "c0d7dd673c5306f852da3864d15adfe3",
+                "Dual berettas": "8f8fe0ae8eb12e252f4e6ccbd53d8c1f",
+                "P250": "5a6cef525465e60390f60ed8bfc7b1db",
+                "44 Magnum": "beccaf6c44ca3a9ba1ce2c79e5037c60",
+                "AWP": "4d54edb8a61a7f84d39f70380c061d40",
+                "G3SG1": "7f34f48418eb18070e7ea592ecddba13",
+                "SSG 08": "3dd820b9de4d76c56bc011bd81a99a9f",
+                "Thompson": "169d82e43b5604be9caa78099908eeb9",
+                "MP7-SD": "7e962643e48018d7118ec174137e0ddd",
+                "MP5": "69de9369e0efa22340ee8e9e1206bd60",
+                "P90": "8008e1d237e276b6167cc7b5d3054531",
+                "UMP-45": "649a10d8c87cde2e1ad2c1e94b510cea",
+                "M249": "bb4f27ef7a963141df3575008cd540ab",
+                "MG42": "06268ec5d7d81b61b0bf8e40c035ad39",
+                "Nova": "75b03baee0704648ff8295742e97a929",
+                "XM1014": "df64d000fbf491bd480b9a663632a3e5",
+                "Knife": [
+                    "0f79d6ec8eba2f4249440e272e37a900",
+                    "60b4ad7316f1f307503e3537b10b65ae"
+                ]
+            }
         },
+        "hitsounds": {
+            "hit sound 1": "1524f7611b0566de10f1322486be70e5",
+            "hit sound 2": "1ca473a4b7c104e9bc95909da8bfb2d3"
+        },
+        "skyboxes": [
+            "3ef9b32ee5bec47bad6ccbefa6a0ab9c",
+            "e1cc3de486a0827364e6e8b55d43f7f3",
+            "25a2f0e8e683819aa8575e2e9ec69162",
+            "8bf6118237eb672393b9dc919a5f0001",
+            "9e4c47e82a1e7bc50fe5ee586bc270a0",
+            "c58141701e3272e2a159104dd8e988b0",
+            "05a809bd5e6b365ad39789310dc504b8",
+            "261f35488970f97e72609623bd7c618a",
+            "5c33542bf9ef5440c3e39c8065a86503",
+            "d7ee2b5d8fc7f6300ba5a9257b2c681e",
+            "e8fafae29840fe96f9e58ac4cb6f6c37",
+            "fc5ceb1b70fdf5595bbc49a23edb4a6e",
+            "1e008ccb310bb48895118a8592b21b85",
+            "399706ad5e9583d083b65e761f4d6e45",
+            "76a7df3020b27c31c537da7d51111591",
+            "8db589d49f38e32b3e5175198823910e",
+            "9d4dd49404634932edbd1f0574877f3f",
+            "d801b3a523073ee1e402632fb72a4c01",
+            "0bf00210f45c284d7dd77bb25fea9b26",
+            "30491c52a91bb4e8f6df49d3cf5a6109",
+            "5fac319e9f663d7eced29ec39abd0b51",
+            "6c708b46a7eed9cd7cba40f64196b56a",
+            "970d515bbb32959bea9a433a4d79ac3f",
+            "a43f50bac6ec861632279ca968b14f59"
+        ]
+    },
+    "fleasion replacements": {
+        "remove": "75205be5a167842c7ed931d9d5a904ca",
         "replacement sounds": {
             "gun sounds": {
                 "pf guns": {
@@ -1090,3 +1104,4 @@
             }
         }
     }
+}
